@@ -1,0 +1,28 @@
+<p id="notice"><%= notice %></p>
+<div class="muestra">
+<p>
+ <%= image_tag(@curso.imagen, size: '100x100') %>	
+</p>
+<p>
+  <strong> <h1>Titulo: </h1></strong>
+  <%= @curso.titulo %>
+</p>
+
+<p>
+  <strong>Descripcion:</strong>
+  <%= @curso.descripcion %>
+</p>
+
+<p>
+  <strong>Precio:</strong>
+  <%= @curso.precio %>
+</p>
+
+<p>
+  <strong>Contenido:</strong>
+  <%= @curso.contenido %>
+</p>
+
+<%= link_to 'Edit', edit_curso_path(@curso) %> |
+<%= link_to 'Back', cursos_path %>
+</div>
